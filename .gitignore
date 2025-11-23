@@ -1,0 +1,43 @@
+# .gitignore for rust-arduino (Rust + AVR embedded project)
+# See: https://github.com/github/gitignore/blob/main/Rust.gitignore
+
+# Cargo build directory
+/target/
+
+# Generated dependency files and compiler artifacts
+*.d
+*.rlib
+*.rmeta
+
+# AVR / embedded output files
+*.elf
+*.hex
+*.bin
+*.eep
+*.map
+*.lst
+
+# Linker and object files
+*.o
+*.a
+
+# Editor and OS files
+.DS_Store
+*.swp
+*~
+
+# IDEs
+/.vscode/
+.idea/
+
+# Logs and temp
+*.log
+*.tmp
+tmp/
+
+# Keep CARGO_LOCK in repo when this is an application (firmware). Do not ignore Cargo.lock by default.
+
+# Local build/system files that sometimes appear in embedded toolchains
+*.bin.hex
+*.map
+/target

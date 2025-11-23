@@ -1,0 +1,16 @@
+[package]
+name = "rust-arduino"
+version = "0.1.0"
+edition = "2025"
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+panic-halt = "0.2.0"
+ufmt = "0.2.0"
+
+[dependencies.arduino-hal]
+git = "https://github.com/Rahix/avr-hal"
+rev = "07ad523"
+features = ["arduino-uno"] 
